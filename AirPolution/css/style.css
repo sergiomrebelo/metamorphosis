@@ -1,0 +1,38 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    /*font-family: "Recursive", monospace;*/
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+}
+
+:root {
+    /* Start with axis defaults. Exclude weight, which is better controlled via the usual font-weight CSS property */
+    --MONO: 0; /* Monospace    */
+    --CASL: 0; /* Casual       */
+    --slnt: 0; /* Upright      */
+    --CRSV: 0.5; /* Auto Cursive */
+}
+
+body {
+    /*height: 100vh;*/
+    /*display: grid;*/
+    justify-content: center;
+    align-content: center;
+    /*padding: 1vw;*/
+}
+
+
+.cities {
+    text-align: center;
+    font-size: 80px;
+    /*font-weight: 320;*/
+    /*font-variation-settings: 'wght' 800;
+    --wght: 300;*/
+}
+
+.cities p {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
