@@ -1,0 +1,81 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Noise</title>
+
+  <style>
+
+    @font-face {
+      font-family: font;
+      src: url(ChickenShopGothicGX.woff2);
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      top: 0;
+      left: 0;
+      background-color: black;
+    }
+
+    #noise {
+      height: 90vh;
+      background: white;
+      width: 50vh;
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      font-family: font;
+    }
+
+    #noise p {
+      position: relative;
+      line-height: 0;
+      font-size: 46.5vh;
+      font-variation-settings: "susi" 100;
+      top: -4.5vh;
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="noise">
+    <p id="noisep">
+      NOISE
+      <p>
+      </div>
+
+      <script type="text/javascript">
+        let noise = document.getElementById("noisep"),
+        size = 100, mar = -4.5, inc = -1;
+
+        //map igual ao processing
+        function mapp(value, istart, istop, ostart, ostop) {
+          return ostart + (ostop - ostart) * ((value - istart) / (istop - istart));
+        }
+
+        //draw
+        setInterval(()=> {
+          window.requestAnimationFrame(()=>{
+
+           //definir tamanho
+           noise.style.top = mar + "vh";
+           noise.style.fontVariationSettings = '"susi" '+size;
+
+           //atualizar valores de tamanho
+           size+=inc;
+           if(size < 0 || size > 100) inc=-inc; //tamanho
+           mar = mapp(size, 100, 0, -4.5, -65);  //margem top
+
+         })
+        },10);
+
+
+      </script>
+
+
+    </body>
+    </html>
