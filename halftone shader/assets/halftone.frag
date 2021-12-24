@@ -29,7 +29,7 @@ void main() {
     //vec2 st2 = mat2(0.707, -0.707, 0.707, 0.707) * st;
     vec2 st2 = mat2(0.707, -0.707, 0.707, 0.707) * st;
     // distance between points
-    vec2 nearest = 2.0*fract(frequency * st2) - 1.0;
+    vec2 nearest = 4.0*fract(frequency * st2) - 1.0;
     float dist = length(nearest);
     // Use a texture to modulate the size of the dots
     vec3 texcolor = texture2D(uSampler, st).rgb; // Unrotated coords
