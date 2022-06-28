@@ -1,0 +1,216 @@
+:root {
+    --opacityLoader: 1; 
+    --opacityLoader2: 0; 
+    --opacityFullLoader: 1;
+    --mainColor: #ff6600;   /*rgb(252, 110, 58)*/
+}
+
+@font-face {
+  font-family: 'GTFlexaMed';
+  src: url('font/GT Flexa VAR Trial.woff2') format('woff2');
+}
+
+::selection {
+  background: var(--mainColor); /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #ff6600; /* Gecko Browsers */
+}
+
+.loading-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--mainColor);
+    opacity: var(--opacityFullLoader);
+    z-index: 9999;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+  }
+
+  .loading {
+    display: block;
+    height: 100px;
+    opacity: var(--opacityLoader);
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+  }
+
+  .loading2 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: var(--opacityLoader2);
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+  }
+
+  
+  svg {
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 20vh;
+    height: 20vh;
+    fill: blue;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 90% 30%;
+      stroke-width: 0.5vh;
+    /* stroke-dashoffset: 0%;*/
+      animation: stroke-offset 50s infinite linear;
+  }
+  
+  .textLoading1 {
+    position: absolute;
+    text-align: center;
+    font-family: 'GTFlexaMed', sans-serif;
+    font-variation-settings: "wght" 480;
+    font-size: 3vh;  /*1.5rem*/
+    /*margin: auto;*/
+    top: 25%;
+    width: 100%;
+    color: #000;
+  }
+
+  .blockTwo {
+    top: 40%;
+    position: relative;
+    margin: auto;
+    /*width: 100%;
+    height: 100%;*/
+  }
+
+  .textLoading2 {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    font-family: 'GTFlexaMed', sans-serif;
+    font-variation-settings: "wght" 480;  
+    font-size: 3vh;  /*1.5rem*/
+    margin: auto;
+    padding-bottom: 3vh;
+    /*top:33%;
+    width: 50%;
+    left: 25%;*/
+  }
+
+  .bolderText {
+    font-variation-settings: "wght" 700; 
+  }
+
+
+  .continueButton {
+    /*position: absolute;*/
+    font-family: 'GTFlexaMed', sans-serif;
+    font-variation-settings: "wght" 480;
+    font-size: 3vh;
+    text-decoration: none;
+    border: 0.4vh solid #000000;
+    background-color: var(--mainColor);
+    padding: 1vh 2vh 1vh 2vh;
+    /*margin-left: 45.5%;
+    top: 48%;*/
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /*top: 48%;*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /*.continueButton:before{
+    background-color: #ffffff00;
+  }
+
+  .continueButton:active{
+    background-color: #ff0000;
+  }*/
+
+  .continueButton:hover {
+    background-color: #000000;
+    color: var(--mainColor);
+    cursor: pointer;
+    /*opacity: 1;*/
+    /*box-shadow:
+    1px 1px #000000,
+    2px 2px #000000,
+    3px 3px #000000,
+    4px 4px #000000,
+    5px 5px #000000,
+    6px 6px #000000;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease-in-out;*/
+  }
+
+
+
+  @keyframes stroke-offset{
+      100% {stroke-dashoffset: -20000;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+
+    .blockTwo {
+      top: 37%;
+    }
+
+    /*.loading-wrapper {
+      background-color: rgb(0, 4, 255);
+    }*/
+    .textLoading2 {
+      width: 75%;
+      font-size: 2.8vh;
+    }
+
+    .continueButton {
+      font-size: 2.8vh;
+      padding: 0.9vh 1.8vh 0.9vh 1.8vh;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .blockTwo {
+      top: 37%;
+    }
+
+    /*.loading-wrapper {
+      background-color: yellow;
+    }*/
+
+    .textLoading2 {
+      width: 80%;
+      font-size: 2.6vh;
+    }
+
+    .continueButton {
+      font-size: 2.6vh;
+      padding: 0.8vh 1.6vh 0.8vh 1.6vh;
+    }
+  }
