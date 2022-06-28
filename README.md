@@ -47,8 +47,8 @@ The presented poster designs were designed to be displayed both physically (_e.g
 
 ## Team
 - [Ricardo Gonçalves](https://github.com/Ricardo5cg) (concept, design and developement)
-- [Sérgio M. Rebelo](https://github.com/sergiomrebelo/) (design and developement suport and supervision, `srebelo@dei.uc.pt`)
-- [Daniel Lopes](https://github.com/danifslopes/) (design and development support and supervision, `dfl@dei.uc.pt`)
+- [Sérgio M. Rebelo](https://github.com/sergiomrebelo/) (suport and supervision, `srebelo@dei.uc.pt`)
+- [Daniel Lopes](https://github.com/danifslopes/) (suport and supervision, `dfl@dei.uc.pt`)
 - [Artur Rebelo](https://cdv.dei.uc.pt/authors/artur-rebelo/) (supervision)
 
 Work developed in the context of an MSc dissertation of [Ricardo Gonçalves](https://github.com/Ricardo5cg) in [Design and Multimédia](https://dm.dei.uc.pt/) of the University of Coimbra in the [CDV lab.](https://cdv.dei.uc.pt/) of [CMS/CISUC](https://www.cisuc.uc.pt/en).
