@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'GTFlexaBold';
+  src:  url('font/GT-Flexa-X-Compressed-Bold-Trial.woff2') format('woff2');
+}
+
+:root {
+  --height1: 0;
+  --opacity1: 0;
+  --width1: 0;
+  --bottom1: 0;
+  --marginTop1: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+  }
+  
+  canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--marginTop1);
+  }
+  
+   /*
+  #messageDiv {
+    position: absolute;
+    height: 890.15px;
+    opacity: 0.5;
+    font-family: 'GTFlexaBold', sans-serif;
+    z-index: 99;
+    font-size: 12vh;
+    line-height: 9vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  #messageDiv p {
+    margin-top: 50%;
+    margin-bottom: 0;
+  }*/
+
+
+    .container {
+      height: var(--height1);   /*890.15px*/
+      width:100%;
+      display: block;
+      z-index: 99;
+      /*background-color: rgba(137, 43, 226, 0.164);*/
+    }
+
+    .container > p {
+      /*background-color: white;*/
+      color: white;
+      opacity: var(--opacity1);
+      font-family: 'GTFlexaBold', sans-serif;
+      font-size: 13vh;
+      line-height: 9.8vh;
+      align-items: center;
+      text-align: center;
+      z-index: 999;
+    }
+
+    .center {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #sub1 {
+      position: absolute;
+      z-index: 9999;
+      align-items: center;
+      /*position: relative;*/
+      width: var(--width1);
+      /*margin-left: var(--marginLeft1);*/
+      bottom: var(--bottom1);
+  }
+
+    .videoTexture {
+      pointer-events: none;
+      user-select: none;
+      /*filter: url("#goovey");*/
+      opacity: 0.2;
+    }
+
+   svg {
+     width: 0;
+     height: 0;
+   }
