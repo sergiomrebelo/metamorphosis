@@ -9,12 +9,12 @@ Currently, the explored subjects are [Air Pollution](https://cdv.dei.uc.pt/2021/
 
 The online gallery collecting the developed posters is accessible at [cdv.dei.uc.pt/2021/metamorphosis](https://cdv.dei.uc.pt/2021/metamorphosis).
 
-Metamorphosis is a work-in-progress project. This way, some code optimisations and debugging may be necessary. Feel free to use and modify the code. Let us know if you have any issues or suggestions. 
+_Metamorphosis_ is a work-in-progress project. This way, some code optimisations and debugging may be necessary. Feel free to use and modify the code. Let us know if you have any issues or suggestions. 
 
 #### Repository structure 
 
 - `imgs` some screenshots of the project's setup and posters.
-- `src` source code of the project.
+- `src` source code of the developed posters.
 
 
 ## Installation
@@ -23,7 +23,7 @@ You can copy the repository by forking it and then downloading it using:
 ```bash
 git clone https://github.com/<YOUR-USERNAME>/metamorphosis
 ```
-
+We remember that _Metamorphosis_ still a work-in-progress project and some features could not be available. Feel free to enter in contact with us if you have any issue.
 
 ## Technologies
 The presented poster designs were designed to be displayed both physically (_e.g._ in an outdoor interactive display) and virtually (_e.g._ on a dedicated online gallery). The only setup required is access to the captures of a webcam and microphone. The features of posters (_e.g._ format, size, elements placement position, etc.) were defined in a parametric manner.
