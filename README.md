@@ -1,5 +1,4 @@
-# Metamorphosis
-## Experiments in the Design of Interactive Moving Posters
+# Metamorphosis: Experiments in the Design of Interactive Moving Posters
 
 **Metamorphosis** is a collection of interactive moving posters that address the current “metamorphosis” of the planet Earth due to the current climatic changes, _i.e._ the posters inform about the causes and consequences of some of the current environmental problems, especially focusing on human impact. 
 
@@ -47,10 +46,10 @@ The presented poster designs were designed to be displayed both physically (_e.g
 - Gonçalves, R. (2021). [Metamorphosis: Experiments in the Design of Interactive Moving Posters](https://estudogeral.uc.pt/handle/10316/98072) (MSc dissertation, Design and Multimedia, Universidade de Coimbra). [https://estudogeral.uc.pt/handle/10316/98072](https://estudogeral.uc.pt/handle/10316/98072)
 
 ## Team
-[Ricardo Gonçalves](https://github.com/Ricardo5cg) (concept, design and developement)
-[Sérgio M. Rebelo](https://github.com/sergiomrebelo/) (design and developement suport and supervision, `srebelo@dei.uc.pt`)
-[Daniel Lopes](https://github.com/danifslopes/) (design and development support and supervision, `dfl@dei.uc.pt`)
-[Artur Rebelo](https://cdv.dei.uc.pt/authors/artur-rebelo/) (supervision)
+- [Ricardo Gonçalves](https://github.com/Ricardo5cg) (concept, design and developement)
+- [Sérgio M. Rebelo](https://github.com/sergiomrebelo/) (design and developement suport and supervision, `srebelo@dei.uc.pt`)
+- [Daniel Lopes](https://github.com/danifslopes/) (design and development support and supervision, `dfl@dei.uc.pt`)
+- [Artur Rebelo](https://cdv.dei.uc.pt/authors/artur-rebelo/) (supervision)
 
 Work developed in the context of an MSc dissertation of [Ricardo Gonçalves](https://github.com/Ricardo5cg) in [Design and Multimédia](https://dm.dei.uc.pt/) of the University of Coimbra in the [CDV lab.](https://cdv.dei.uc.pt/) of [CMS/CISUC](https://www.cisuc.uc.pt/en).
 
