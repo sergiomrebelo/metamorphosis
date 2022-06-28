@@ -1,0 +1,59 @@
+  @font-face {
+    font-family: 'GTFlexaBold';
+    src:  url('font/GT-Flexa-X-Compressed-Bold-Trial.woff2') format('woff2');
+  }
+
+  :root {
+    --height1: 0;
+    --opacity1: 0;
+    --width1: 0;
+    --bottom1: 0;
+    --marginTop1: 0;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+  }
+  
+  canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--marginTop1);
+  }
+  
+ 
+  .container {
+    height: var(--height1);   /*890.15px*/
+    width:100%;
+    /*background-color: rgba(137, 43, 226, 0.164);*/
+  }
+
+  .container > p {
+    /*background-color: white;*/
+    color: rgba(0, 0, 0);
+    opacity: var(--opacity1);
+    font-family: 'GTFlexaBold', sans-serif;
+    font-size: 13vh;
+    line-height: 9.5vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  .center {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container > #sub1 {
+    position: absolute;
+    align-items: center;
+    /*position: relative;*/
+    width: var(--width1);
+    /*margin-left: var(--marginLeft1);*/
+    bottom: var(--bottom1);
+}
