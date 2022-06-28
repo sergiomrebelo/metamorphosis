@@ -18,7 +18,7 @@ _Metamorphosis_ is a work-in-progress project. This way, some code optimisations
 
 
 ## Installation
-_Metamorphosis_ still a work-in-progress project and code repository present a preliminary nature. This way, the posters could not run proprely in your machine. Feel free to geting in touch with us if you have any issue. 
+_Metamorphosis_ still a work-in-progress project and code repository present a preliminary nature. This way, the posters could not run properly in your machine. Feel free to geting in touch with us if you have any issue. 
 
 
 ## Technologies
