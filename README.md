@@ -18,12 +18,8 @@ _Metamorphosis_ is a work-in-progress project. This way, some code optimisations
 
 
 ## Installation
-You can copy the repository by forking it and then downloading it using:
+_Metamorphosis_ still a work-in-progress project and code repository present a preliminary nature. This way, the posters could not run proprely in your machine. Feel free to geting in touch with us if you have any issue. 
 
-```bash
-git clone https://github.com/<YOUR-USERNAME>/metamorphosis
-```
-We remember that _Metamorphosis_ still a work-in-progress project and some features could not be available. Feel free to enter in contact with us if you have any issue.
 
 ## Technologies
 The presented poster designs were designed to be displayed both physically (_e.g._ in an outdoor interactive display) and virtually (_e.g._ on a dedicated online gallery). The only setup required is access to the captures of a webcam and microphone. The features of posters (_e.g._ format, size, elements placement position, etc.) were defined in a parametric manner.

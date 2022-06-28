@@ -21,7 +21,7 @@ var list1;
 
     //api list is constantly changing size
     fetch('https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=' + lat + '&lon=' + long + 
-    '&units=metric&appid=86be75b9a30f14d019d8ff3cfbd2022d')
+    '&units=metric&appid=YOUR_KEY')
     .then(response => response.json())
     .then(data => {
         //console.log(data);

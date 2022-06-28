@@ -18,7 +18,7 @@ var temp;
     localStorage.setItem("longitude", long);
 
     fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + 
-    '&units=metric&appid=90244066b882660bcf1dca654caddda7')
+    '&units=metric&appid=YOUR_KEY')
     .then(response => response.json())
     .then(data => {
         //console.log(data);
