@@ -1,0 +1,125 @@
+/*https://codepen.io/coreh/pen/LQJBLa*/
+
+:root {
+    --blur: 2px;
+    --pixelSize: 8px;
+    --width1: 0;
+    --bottom1: 0;
+    --bottom123: 0;
+    --marginTop1: 0;
+    --marginLeft11: 0;
+    --opacityMessage: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(50, 50, 50);
+}
+
+
+/*canvas {
+  display: absolute;
+  z-index: 1;
+}*/
+
+.messageL {
+ /* position: absolute;
+  margin-top: var(--marginTop1);
+  width: 90%;  
+  height: 95%; */
+  position: absolute;
+  margin-top: var(--marginTop1);
+  height: 95%;
+  margin-left: var(--marginLeft11);
+  opacity: var(--opacityMessage);
+  z-index: 999;
+}
+
+.halftone img {
+  position: absolute;
+  margin-top: var(--marginTop1);
+  width: 90%;  /*556px*/
+  height: 90%;  /*891px*/
+  /*height: 891px;*/  /*891px*/
+  left: 5%;
+  /*top: 5%;*/
+  /*margin-left: -45%;*/   /*-278px*/
+}
+
+.halftone {
+  position: absolute;
+  margin-top: var(--marginTop1);
+  /*border: 1px solid black;*/
+  /*top: 30px;*/
+  background-color: rgb(255, 255, 255);
+  /*width: 630px; /*change this to 90% of height*/
+  /*height: 891px;   /*891px*/  /*1120px*/
+  filter: contrast(25000%);
+  overflow: hidden;
+  transform: translateZ(0); /* force a HW accelerated layer */
+
+}
+
+.halftone > * {
+    filter: brightness(0.2);
+    filter: blur(var(--blur));  /*change this values*/
+    /*animation: 10s animation-filter infinite alternate;*/
+}
+
+.halftone::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: -100%;
+    bottom: -100%;
+    background-blend-mode: multiply;
+    background:
+        radial-gradient(var(--pixelSize) var(--pixelSize), rgb(255, 255, 255), white),
+        radial-gradient(var(--pixelSize) var(--pixelSize), rgb(0, 0, 0), white),
+        radial-gradient(var(--pixelSize) var(--pixelSize), rgb(255, 255, 255), white);
+    background-size: var(--pixelSize) var(--pixelSize);
+    /*background-position: 0 -3px, -2px 0, 2px 0;*/
+    mix-blend-mode: hard-light;  /*color-burn  difference hard-light*/
+    pointer-events: none;
+    /*transform: rotate(18deg);*/
+    /*transition: 1s ease-in-out transform;*/
+    z-index: 1;
+    /*animation: 10s animation-overlay infinite alternate;*/
+    transform: scale(0.5);
+ 
+}
+
+
+.container {
+  /*height: var(--height1);   /*890.15px*/
+  height: 100%;
+  width:100%;
+  z-index: 99;
+  /*background-color: rgba(137, 43, 226, 0.164);*/
+}
+
+
+.center {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > #sub1 {
+  position: absolute;
+  align-items: center;
+  /*position: relative;*/
+  width: var(--width1);
+  /*margin-left: var(--marginLeft1);*/
+  bottom: var(--bottom123);
+  opacity: 1;
+  /*bottom: 0px;*/
+}
+
+main {
+  height: 0;
+  width: 0;
+}
